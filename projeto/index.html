@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia - Agendamento</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Barbearia - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Agende seu horário</h1>
+        <h1>Bem-vindo à Barbearia</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="booking.html">Agendar</a></li>
+                <li><a href="agendamento.html">Agendar</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Conteúdo principal, como lista de serviços -->
+        <h2>Escolha seu serviço</h2>
+        <form id="serviceForm">
+            <label for="servico">Selecione um serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="">Escolha um serviço</option>
+                <option value="corte">Corte</option>
+                <option value="barba">Barba</option>
+                <option value="corte-barba">Corte e Barba</option>
+            </select>
+            <input type="button" value="Continuar" onclick="goToScheduling()">
+        </form>
     </main>
 
     <footer>
         <p>© 2024 Barbearia. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
